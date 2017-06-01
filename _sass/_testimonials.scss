@@ -1,0 +1,28 @@
+/*     TESTIMONIALS     */
+ 
+.testimonials
+{
+	.grid
+	{
+		background-color: rgba(215,215,206,0.2);
+		// padding: $row $row;
+	}
+
+	.single-testimonial[class*='col-']
+	{
+		padding: $row;	
+
+		&:nth-child(odd) {
+			clear: both;
+		}
+
+		.user-pic
+		{
+			height: $row * 4; /* 144px */
+			width: $row * 4;
+			border-radius: $row * 4;
+			background-size: cover;
+			margin: 0 auto $row;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+// BANNER IMAGES
+
+.banner-image
+{
+	background-position: center;
+	background-size: cover;
+	// width: 100%;
+	text-align: center;
+	padding: 4.5rem 0;
+
+	h2, h3
+	{
+		color: $white;
+		text-shadow: -2px 2px .5rem rgba($charcoal, 0.3);
+	}
+
+	.raised
+	{	
+		position: relative;
+    	top: -2.25rem;
+	}
+}
+
+.what-to-bring 
+{
+	.banner-image
+	{
+		margin-bottom: $row * 1;
+	}
+}

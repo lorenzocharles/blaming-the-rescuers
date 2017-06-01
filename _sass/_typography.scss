@@ -1,0 +1,60 @@
+@import 'gridlover';
+
+/* FONTS */
+
+// @import 'etica-light-ttf';
+// @import 'etica-ttf';
+
+$body-font: -apple-system-font, "Helvetica Neue", Helvetica, Arial, serif;
+$headings-font: -apple-system-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$script-font: 'Pacifico', cursive;
+
+body
+{
+	font-family: $body-font;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.number, 
+.button,
+.highlight,
+button, input, select, textarea 
+{
+	font-family: $headings-font;
+	font-weight: 700;
+	font-style: inherit;
+}
+
+.handwriting
+{
+	font-family: $script-font;
+	padding: 0 .25rem;
+	font-size: 95%;
+}	
+
+i, em,
+blockquote 
+{
+	font-style: italic;
+}
+
+section
+{
+	margin-bottom: $row * 3;
+	clear: both;
+	display: block;
+}
+
+.centred
+{
+	text-align: center;
+}
+
+.when-where
+{
+	h3 {
+		margin-top: 0;
+	}
+}

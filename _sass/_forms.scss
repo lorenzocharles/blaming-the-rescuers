@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	font-size: 12px;
+	font-weight: 600;
+	text-shadow: none;
+	text-transform: uppercase;
+	line-height: 1;
+	
+	padding: 1.4em 2em 1.2em;
+	
+	-webkit-transition: ease-in-out 0.2s;
+	-moz-transition: ease-in-out 0.2s;
+	-ms-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	-webkit-transition: ease-in-out 0.2s; 
+	-moz-transition: ease-in-out 0.2s;
+	-ms-transition: ease-in-out 0.2s;
+	-o-transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.2s;
+}
+
+button.toggle-menu {
+	font-size: 18px;
+	padding: 6px 12px 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	border-radius: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}

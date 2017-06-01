@@ -1,0 +1,16 @@
+#home-hero 
+{
+	background-position: center right;
+	background-size: cover;
+	padding: $row * 4 0; 
+	text-align: center;
+
+	h1
+	{
+		max-width: 720px;
+		margin: 0 auto;
+		// text-shadow: -3px 3px .75rem white;
+		color: $white;
+    	text-shadow: -3px 3px .75rem rgba($charcoal, 0.4);
+	}
+}

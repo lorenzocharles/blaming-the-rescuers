@@ -1,0 +1,61 @@
+.info-panels
+{
+	clear: both;
+
+	.single-info-panel
+	{
+		clear: both;
+		height: $row * 11;
+
+		.info-panel-blurb,
+		.info-panel-image
+		{
+			height: $row * 11;
+			float: left;	
+			position: relative;
+		}
+
+		.info-panel-blurb
+		{
+			// display: table;
+			background-color: rgba(215,215,206,0.2);
+			padding: 0 $row ;	
+		}
+
+		.info-panel-image
+		{
+			margin: 0 auto;
+			display: block;
+			background-position: center center;
+			background-size: cover;
+			position: relative;
+		}
+
+		&:nth-child(odd)
+		{
+			.info-panel-blurb
+			{
+				right: 50%;
+			}
+
+			.info-panel-image
+			{
+				left: 50%;
+			}
+		}
+	}
+
+	.number
+	{
+		position: absolute;
+		z-index: 1;
+		padding: $row * 2 $row 0 !important;
+		font-size: 6.375rem; // like h1
+	}
+
+	.white
+	{
+		color: $white;
+		text-shadow: -2px 2px .5rem rgba($charcoal, 0.3);
+	}
+}	

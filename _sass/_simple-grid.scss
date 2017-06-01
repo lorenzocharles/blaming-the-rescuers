@@ -1,0 +1,28 @@
+.grid 
+{
+	&:after 
+	{ 
+		content: "";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+
+	[class*='col-'] 
+	{
+		float: left;
+		padding-left: 0;
+		padding-right: 0;
+	} 
+
+	.col-1-1 
+	{
+		width: 100%;
+	}
+
+	.col-1-2, .col-6-12 
+	{
+		width: 50%;
+	}
+}

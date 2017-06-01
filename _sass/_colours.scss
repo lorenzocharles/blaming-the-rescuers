@@ -1,0 +1,71 @@
+body,
+button,
+input,
+select,
+textarea,
+p
+{
+	color: $clouds;
+}
+
+h1, h2, h3, h4, h5,
+.highlight,
+.handwriting,
+.number
+{
+	color:$charcoal;
+}
+
+a 
+{
+	transition: all .3s;
+	// color: #666666;
+	color:$charcoal;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    padding-bottom: 2px;
+
+	&:hover,
+	&:focus
+	{
+		transition: all .3s;
+		// color: #000000;
+		color: $almost-black;
+		border-style: solid;
+	}
+}	
+
+/* button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] 
+{
+	border: 3px solid;
+	border-color: #404040;
+	background: none;
+	box-shadow: none;
+	color: #404040;
+
+	&:hover,
+	&:focus,
+	&:active 
+	{
+		border-color: #000;
+		background: #000;
+		color: #fff;
+	}	
+}	
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+
+	&:focus {
+		color: #111;
+	}
+} */

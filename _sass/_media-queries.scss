@@ -1,0 +1,124 @@
+#main
+{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 1rem;
+
+	.how-much table,
+	.when-where .grid,
+	p 
+	{
+		max-width: 720px;
+		margin: auto;
+	}
+
+	p 
+	{
+		margin-bottom: 2.25rem;
+	}
+}
+
+@media (max-width: 959px) 
+{
+	html 
+	{
+		font-size: 13.3333333333333px; // p → 20px
+	}
+
+	.banner-image,
+	.info-panels,
+	.testimonials
+	{
+		margin-left: -1rem;
+		margin-right: -1rem;
+	}
+	
+	#home-hero h1,
+	.banner-image
+	{
+		padding-left: 1rem;
+    padding-right: 1rem;
+	}
+}	
+
+/* @media (max-width: 719px) 
+{
+	html {
+		font-size: 12px; // p → 18px
+	}	
+} */
+@media (max-width: 827px)
+{
+	#summary-1 .h3-heading
+	{
+		margin-bottom: 2.5rem;
+	}
+}
+
+
+@media (max-width: 599px) 
+{
+
+	/* html {
+		font-size: 16px; // p → 24px
+	} */
+
+	#home-hero {
+		padding: $row * 2 0; 
+	}
+	
+	section {	
+		margin-bottom: $row * 2;
+	}
+	
+	h1 {
+		// font-size: 3.9375rem;
+		font-size: 55px;
+		line-height: $row * 2;
+	}
+
+	h2 {
+		// font-size: 2.4375rem;
+		font-size: 40px;
+		line-height: $row * 2;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+	.grid
+	{
+		[class*='col-']
+		{
+			// float: none;
+			width: 100%;
+		}
+	}
+	
+	.info-panels
+	{
+		.single-info-panel
+		{
+			height: auto;
+
+			.info-panel-blurb
+			{
+				height: auto;
+	    	padding-bottom: $row;
+			}
+
+			&:nth-child(odd)
+			{
+				.info-panel-blurb
+				{
+					right: 0%;
+				}	
+				.info-panel-image
+				{
+					left: 0%;
+				}
+			}
+		}
+	} 
+}
