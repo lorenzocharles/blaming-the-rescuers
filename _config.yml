@@ -3,16 +3,16 @@
 #
 
 name: Blaming the Rescuers
-description: The lethal effects of the EU's policies of non-assistance at sea
+description: Criminalising solidarity, re-enforcing deterrence
 author: Charles Heller and Lorenzo Pezzani
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 # google_analytics: 
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Your website URL 
 # Used for Sitemap.xml and your RSS feed
-url: https://deathbyrescue.org   # with the https protocol
-enforce_ssl: deathbyrescue.org   # without any protocol
+url: https://blamingtherescuers.org   # with the https protocol
+enforce_ssl: blamingtherescuers.org   # without any protocol
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
