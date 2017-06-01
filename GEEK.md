@@ -60,7 +60,7 @@ When the food is ready, invite your different platforms  with the [**browsersync
 
 If the site doesn't seem to be re-building after you've made changes, it may be that Jekyll is choking up on something. Drag the repository folder into a new Terminal window, and execute `jekyll build --config _config.yml,_config.local.yml --verbose`
 
-Most likely, it's going to be a single quote character `'` inside an `{% include ... %}` block, which you can substitute with `&#8217;`.
+Most likely, it's going to be a single quote character `'` inside an `include` block, which you can substitute with `&#8217;`.
 
 <!-- 
 
