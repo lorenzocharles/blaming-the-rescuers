@@ -1,0 +1,33 @@
+<script src="{{ site.baseurl }}/js/jquery.js"></script>
+<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/js/jquery.easing.min.js"></script>
+<script src="{{ site.baseurl }}/js/scrolling-nav.js"></script>
+<script src="{{ site.baseurl }}/js/parallax.js"></script>
+<script src="{{ site.baseurl }}/js/bootstrap-magnify.min.js"></script>
+<script src="{{ site.baseurl }}/js/lightbox.js"></script>
+
+<script>
+	/*$(function () 
+	{
+		$('[data-toggle="popover"]').popover()
+	})*/
+
+	$('#myCarousel').carousel();
+
+	$('[data-toggle="popover"]').popover(
+	{
+		container: 'body'
+	});
+</script>
+
+<!-- 
+<script type="text/javascript">
+	setTimeout(function()
+	{ 
+		var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0032/7104.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)
+	}, 1);
+</script> 
+-->

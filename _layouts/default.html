@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<script type="text/javascript">
+			var host = 'deathbyrescue.org'
+			if ((host == window.location.host) && (window.location.protocol != 'https:')) window.location.protocol = 'https'
+		</script>
+
+		<title>{{ site.name }}</title>
+
+		{% include meta.html %}
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+		<!-- <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
+		<link rel="canonical" href="{{ site.url }}" />
+
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/sassy.css" />	
+	
+	</head>
+
+	<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+		{% include nav.html folder=page.folder article=page.article %}
+		
+		{{ content }}
+	    
+	 	{% include scripts.html %}
+
+	</body>
+</html>

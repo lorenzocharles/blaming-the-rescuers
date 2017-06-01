@@ -1,0 +1,76 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-header">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+
+      <div class="title">
+        <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+      </div>
+    </div>
+    
+    {% if include.folder == 'report' %}
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    {% else %}
+    <div class="collapse navbar-collapse navbar-ex1noreport-collapse">
+    {% endif %}
+
+      <div class="menu-1">
+        <h5>
+          <ul class="nav navbar-nav">
+            <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <!-- <li>
+              <a class="page-scroll menu-summary {% if include.folder == 'foreword' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/foreword">Foreword</a>
+            </li> -->
+            <li>
+              <a class="page-scroll menu-summary {% if include.folder == 'summary' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/">Summary</a>
+            </li>
+            <li>
+              <a class="page-scroll menu-report {% if include.folder == 'report' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report">Report</a>
+            </li>
+            <li>
+              <a class="page-scroll menu-cases {% if include.folder == 'annexes' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/annexes">Annexes</a>
+            </li>
+            <li>
+              <a class="page-scroll menu-cases {% if include.folder == 'acknowledgements' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/acknowledgements">Acknowledgements</a>
+            </li>
+          </ul>
+        </h5>
+      </div>
+      
+      {% if include.folder == 'report' %}
+      <div class="menu-2">
+        <h5>
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll {% if include.article == 'introduction' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report">Introduction</a>
+            </li>
+            <li>
+              <a class="page-scroll {% if include.article == 'toxicnarrative' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report/toxicnarrative">Toxic Narrative</a>
+            </li>
+            <li>
+              <a class="page-scroll {% if include.article == 'counteranalysis' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report/counteranalysis">Counter Analysis</a>
+            </li>
+            <li>
+              <a class="page-scroll {% if include.article == 'conclusions' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report/conclusions">Conclusions</a>
+            </li>
+          </ul>
+        </h5>
+      </div>
+      {% endif %}
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>

@@ -1,0 +1,92 @@
+<!--  ANNEXES   -->
+
+{% include annex-block.html file='CHANGE_THIS' title='CHANGE_THIS' %}
+
+<!--  IMAGES   -->
+
+{% include image-block.html image='CHANGE_THIS' caption='CHANGE_THIS' %}
+
+
+style="margin-top:1.5rem;"
+
+<!-- MULTIPLE IMAGE -->
+		        <div class="img-box fit">
+		            <a href="{{ site.baseurl }}/assets/FIRST-IMAGE-NAME" data-title="USE CAPTION" data-lightbox="lightbox02">
+		                <span class="slideshow" style="background: url({{ site.baseurl }}/assets/lightbox/next.png) right 48% no-repeat;"></span>
+		                <img src="{{ site.baseurl }}/assets/FIRST-IMAGE-NAME" class="img-responsive img-thumbnail">
+		            </a>
+		            <a href="{{ site.baseurl }}/assets/SECOND-IMAGE-NAME" data-title="USE CAPTION" data-lightbox="lightbox02">
+		            </a>
+		        </div>
+		        <span class="caption">
+		        CAPTION
+		        </span>
+
+<!-- IMAGE WITH SUP IN CAPTION -->
+		        <div class="img-box fit">
+				  <a href="{{ site.baseurl }}/assets/IMAGE-NAME" data-title="{{ include.caption }}" data-lightbox="lightbox01">
+				    <img src="{{ site.baseurl }}/assets/IMAGE-NAME" class="img-responsive img-thumbnail">
+				  </a>
+				</div>
+				<span class="caption">
+				  CAPTION {% include footnote-block.html content='CHANGE_THIS' %}
+				</span>
+
+<!--  VIMEOS   -->
+
+{% include vimeo-block.html videoID='1234567' caption='CHANGE_THIS' %}
+
+<!--  SUPS     -->
+
+              {% include footnote-block.html content='CHANGE_THIS' %} 
+
+<!--  ANNEXES LINK     -->
+
+<!--<a href=#>annex</a>-->annex
+
+<!-- BOLD BLOCK -->
+      
+{% include bold-block.html content='CHANGE_THIS' %}
+
+<!-- BOLD BLOCK WITH SUP-->
+        <div class="box">
+          <p class="emphasized-text">
+          CHANGE-THIS{% include footnote-block.html content='CHANGE_THIS' %}
+          </p>
+        </div>
+
+<!-- QUOTE -->
+            <div class="quote">
+                  <div class="quote-text">
+                      “QUOTE”<sup><a data-placement="top" data-toggle="popover" data-toggle="popover" tabindex="0" role="button" data-content="CHANGE-THIS" data-html="true"><span class="glyphicon glyphicon-bookmark"></span></a></sup>
+                  </div>
+                  <div class="quote-source">
+                      CHANGE-SOURCE
+                  </div>
+            </div>
+
+        <div class="quote">
+          <div class="quote-text">
+            “QUOTE”<sup><a data-placement="top" data-toggle="popover" data-toggle="popover" tabindex="0" role="button" data-content="CHANGE-THIS" data-html="true"><span class="glyphicon glyphicon-bookmark"></span></a></sup>
+          </div>
+          <div class="quote-source">
+            CHANGE-SOURCE
+          </div>
+        </div>      
+
+<!-- FIRST H3 -->
+            <div class="box">
+              <h3><span class="h3-heading">
+                CHANGE-THIS
+              </span></h3>
+            </div>
+
+<!-- P -->
+
+<p style="margin-top:1.5rem;">
+  CHANGE THIS
+</p>
+
+<!-- DEATHBYRESUE LINK -->
+
+<a href="https://deathbyrescue.org/">deathbyrescue.org</a>
