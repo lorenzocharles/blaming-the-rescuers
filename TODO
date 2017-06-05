@@ -1,0 +1,41 @@
+TODO
+Carousel double image - get arrow to show up
+
+ on the video displayed in the exec summary, which is from my Plus, there is a lot of unecessry display...
+you might just want to try uploading this, to show us how it looks.
+https://vimeo.com/162952750
+we'll need it somewhere in the exec summary too
+but don't worry about this. if i have too, i'll upgrade to Pro.
+
++++++++++
+
+- REPORT.NARRATIVE.2 Double image line 76 approx - what should the two different image titles be? the caption inside the image?
+- Also get arrow working AGAIN
+- A few mentions of 'annex' in footnotes - have made them empty link - is it correct?
+
+- REPORT.NARRATIVE.3 Some green highlighted dates in Institutionalised neglect - are these meant to be links?
+- IMAGE MISSING no image matching the word doc approx line 98
+- More green highlighting in word doc "minutes of the meetings held between August and October 2014 by Frontex, Italian and Maltese agencies, and the EU Commission " - link?
+- Green highlighting approx line 140 "3 and 4 September"
+- Green " line 142 "minutes of this meeting "
+
+- REPORT.NARRATIVE.4 MISSING IMAGE approx line 167
+
+Lorenzo report:
+
+- double image is up - need to figure out why arrow won't show up tbc...
+- https://www.publitas.com/features/ could be an option for embedding pdfs into the site
+
+
+
+
+
+
+
+				<!--<a href=#>annex</a>-->annex
+
+				<sup><a data-placement="top" data-toggle="popover" data-toggle="popover" tabindex="0" role="button" data-content="CHANGE-THIS" data-html="true"><span class="glyphicon glyphicon-bookmark"></span></a></sup>
+
+
+
+<div id="publitas-embed-0cveaed6yqzrh6d906cnomvx6r"></div><script publitas-embed data-wrapperId="publitas-embed-0cveaed6yqzrh6d906cnomvx6r" data-cfasync="false" data-menu="false" data-publication="https://view.publitas.com/p222-8233/2014-09-24-technical-meeting-ita-comission-fx_minutes-2-a/" data-responsive="true" type="text/javascript" src="https://view.publitas.com/embed.js"></script>
