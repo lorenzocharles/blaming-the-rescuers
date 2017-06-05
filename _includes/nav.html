@@ -22,23 +22,20 @@
       <div class="menu-1">
         <h5>
           <ul class="nav navbar-nav">
-            <li class="hidden">
-              <a class="page-scroll" href="#page-top"></a>
+            <li {% if include.folder == 'foreword' %} class="current" {% endif %}>
+              <a class="page-scroll" href="{{ site.baseurl }}/foreword">Foreword</a>
+            </li> 
+            <li {% if include.folder == 'summary' %} class="current" {% endif %}>
+              <a class="page-scroll" href="{{ site.baseurl }}/">Summary</a>
             </li>
-            <!-- <li>
-              <a class="page-scroll menu-summary {% if include.folder == 'foreword' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/foreword">Foreword</a>
-            </li> -->
-            <li>
-              <a class="page-scroll menu-summary {% if include.folder == 'summary' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/">Summary</a>
+            <li {% if include.folder == 'report' %} class="current" {% endif %}>
+              <a class="page-scroll" href="{{ site.baseurl }}/report">Report</a>
             </li>
-            <li>
-              <a class="page-scroll menu-report {% if include.folder == 'report' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report">Report</a>
+            <li {% if include.folder == 'annexes' %} class="current" {% endif %}>
+              <a class="page-scroll" href="{{ site.baseurl }}/annexes">Annexes</a>
             </li>
-            <li>
-              <a class="page-scroll menu-cases {% if include.folder == 'annexes' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/annexes">Annexes</a>
-            </li>
-            <li>
-              <a class="page-scroll menu-cases {% if include.folder == 'acknowledgements' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/acknowledgements">Acknowledgements</a>
+            <li {% if include.folder == 'acknowledgements' %} class="current" {% endif %}>
+              <a class="page-scroll" href="{{ site.baseurl }}/acknowledgements">Acknowledgements</a>
             </li>
           </ul>
         </h5>
@@ -48,25 +45,36 @@
       <div class="menu-2">
         <h5>
           <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden">
-              <a class="page-scroll" href="#page-top"></a>
+            <li>
+              <a class="page-scroll" href="#page-top">Introduction</a>
             </li>
             <li>
-              <a class="page-scroll {% if include.article == 'introduction' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report">Introduction</a>
+              <a class="page-scroll" href="#toxic-narrative">Toxic Narrative</a>
             </li>
             <li>
-              <a class="page-scroll {% if include.article == 'toxicnarrative' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report/toxicnarrative">Toxic Narrative</a>
+              <a class="page-scroll" href="#counter-analysis">Counter Analysis</a>
             </li>
             <li>
-              <a class="page-scroll {% if include.article == 'counteranalysis' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report/counteranalysis">Counter Analysis</a>
-            </li>
-            <li>
-              <a class="page-scroll {% if include.article == 'conclusions' %} page-scroll-active {% else %} page-scroll-not {% endif %}" href="{{ site.baseurl }}/report/conclusions">Conclusions</a>
+              <a class="page-scroll" href="#conclusions">Conclusions</a>
             </li>
           </ul>
         </h5>
       </div>
+
+      <div class="page-nav">
+        <ol class="nav navbar-nav">
+          <li>
+            <a class="page-scroll" href="#counter-1">1. PULL FACTOR? </a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#counter-2">2. WORSENING SMUGGLERS’ TACTICS?</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#counter-3">3. INCREASING THE DANGER OF CROSSINGS?</a>
+          </li>
+        </ol>
+      </div>
+
       {% endif %}
 
     </div>

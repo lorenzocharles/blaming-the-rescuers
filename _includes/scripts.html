@@ -7,17 +7,19 @@
 <script src="{{ site.baseurl }}/js/lightbox.js"></script>
 
 <script>
-	/*$(function () 
-	{
-		$('[data-toggle="popover"]').popover()
-	})*/
 
-	$('#myCarousel').carousel();
+	// $('#myCarousel').carousel();
 
 	$('[data-toggle="popover"]').popover(
 	{
 		container: 'body'
 	});
+
+	$('body').scrollspy(
+	{ 
+		target: '.navbar-fixed-top' 
+	})
+
 </script>
 
 <!-- 

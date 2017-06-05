@@ -76,7 +76,7 @@ h5, .h5-heading
   color:black;
   text-transform:uppercase;
   display:inline-block;
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   font-weight: 400;
   margin:0;
   /* -webkit-font-feature-settings: 'kern';
@@ -493,22 +493,7 @@ h5.caption {
   width:100%;
   height:auto;
 }
-.menu-2 > h5 > .navbar-nav {
-    font-size: 1rem;
-}
-.menu-2 > h5 > .navbar-nav > li > a {
-    padding: 7.5px .5rem;
-}
-.menu-2 {
-  width:100%;
-  min-height: 30px;
-  position: fixed;
-  right: 0;
-  top: 60px;
-  -webkit-transition: top .25s ease-in-out;
-        -moz-transition: top .25s ease-in-out;
-        transition: top .25s ease-in-out;
-}
+
 .navbar-collapse.collapse.in > .menu-1 > h5 > .navbar-nav > li > a {
     padding: 8px;
 }
@@ -533,9 +518,7 @@ h5.caption {
   -o-transition:color .25s;
   transition:color .25s;
 }
-.menu-2 ul {
-  max-width:1000px;
-}
+
 .magnify{
   width: 100%;
     margin-left: auto;
@@ -547,62 +530,109 @@ h5.caption {
   -o-transition:background-color .25s;
   transition:background-color .25s;
 }
-.navbar-default .navbar-ex1-collapse .navbar-nav-collapse > li > a {
+
+.navbar-default .navbar-ex1-collapse .navbar-nav-collapse > li > a 
+{
   font-size: 1rem;
   padding: 7.5px .5rem;
--webkit-transition: padding .5s ease-in-out;
-        -moz-transition: padding .5s ease-in-out;
-        transition: padding .5s ease-in-out;
-        -webkit-transition: font-size .5s ease-in-out;
-        -moz-transition: font-size .5s ease-in-out;
-        transition: font-size .5s ease-in-out;
-}
-.navbar-default .navbar-ex1-collapse .navbar-nav-collapse > li {
-  /*padding-right: 1rem;*/
-}
-.menu-2.menu-2-collapse {
-  top: 30px;
-  /* -webkit-transition: top .5s ease-in-out;
-        -moz-transition: top .5s ease-in-out;
-        transition: top .5s ease-in-out; */
+  transition: font-size .25s;
 }
 
-.collapse.navbar-collapse.navbar-ex1-collapse {
+.collapse.navbar-collapse.navbar-ex1-collapse 
+{
   padding-bottom:30px;
-  -webkit-transition: padding-bottom .5s ease-in-out;
-        -moz-transition: padding-bottom .5s ease-in-out;
-        transition: padding-bottom .5s ease-in-out;
-}
-.collapse.navbar-collapse.navbar-ex1-collapse.ex1-collapse {
-  // padding-bottom:0px;
-    -webkit-transition: padding-bottom .5s ease-in-out;
-        -moz-transition: padding-bottom .5s ease-in-out;
-        transition: padding-bottom .5s ease-in-out;
+  transition: padding-bottom .25s;
 }
 
-.navbar-default .navbar-nav > li > a {
+.collapse.navbar-collapse.navbar-ex1-collapse.ex1-collapse 
+{
+  transition: padding-bottom .25s;
+}
+
+.navbar-default .navbar-nav li a 
+{
   padding: 21px 1rem;
+  // padding: .5rem .5rem;
   text-transform: uppercase;
   text-align: center;
-  -webkit-transition: padding .25s ease-in-out, color .25s linear, background-color .25s linear;
-  -moz-transition: padding .25s ease-in-out, color .25s linear, background-color .25s linear;
-  -o-transition: padding .25s ease-in-out, color .25s linear, background-color .25s linear;
-  transition: padding .25s ease-in-out, color .25s linear, background-color .25s linear;
+  transition: padding .25s, color .25s linear, background-color .25s linear;
 }
-a.page-scroll-not {
-  color:white;
-  background-color:black;  
+
+.menu-2 h5 .navbar-nav 
+{
+  font-size: 1rem;
+}
+
+.menu-2, .page-nav 
+{
+  .navbar-nav li a 
+  {
+    padding: 7.5px .5rem;
   }
-a.page-scroll-active {
-  color:black;
-  background-color:#dadada;
+}
+
+.menu-2 
+{
+  width:100%;
+  min-height: 30px;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  transition: top .25s;
+}
+
+.menu-2 ul 
+{
+  max-width:1000px;
+}
+
+.menu-2.menu-2-collapse 
+{
+  top: 30px;
+}
+
+ul.nav
+{
+  li
+  {
+    a.page-scroll 
+    {
+      color: white;
+      background-color: black;  
+      transition: color, background-color .25s;
+
+      &:hover 
+      {
+        color: yellow;
+        transition: color, background-color .25s;
+      }
+    }
+
+    &.active,
+    &.current
+    {
+      a.page-scroll 
+      {
+        color: black;
+        background-color: #dadada;
+        transition: color, background-color .25s;
+        
+        &:hover 
+        {
+          background-color: yellow;
+          transition: color, background-color .25s;
+        }
+      }
+    }
   }
-a.page-scroll-not:hover {
-  color:yellow;
-  }
-a.page-scroll-active:hover {
-  background-color:yellow;
-  }
+}
+
+.page-nav li.active a
+{
+  background: black;
+  color: #dadada;
+}
+
 /*.top-section {
   padding-top: 104px;
 }*/
@@ -619,22 +649,22 @@ a.page-scroll-active:hover {
   // font-size: 1rem;
   font-family: BebasNeueBold,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
   line-height: 1.1;
-  -webkit-transition: top .5s ease-in-out;
-        -moz-transition: top .5s ease-in-out;
-        transition: top .5s ease-in-out;
-        -webkit-transition: font-size .5s ease-in-out;
-        -moz-transition: font-size .5s ease-in-out;
-        transition: font-size .5s ease-in-out;
+  -webkit-transition: top .25s;
+        -moz-transition: top .25s;
+        transition: top .25s;
+        -webkit-transition: font-size .25s;
+        -moz-transition: font-size .25s;
+        transition: font-size .25s;
 }
 .title.title-collapse{
   // font-size: 1.5rem;
   // top: 7.5px;
-  -webkit-transition: top .5s ease-in-out;
-        -moz-transition: top .5s ease-in-out;
-        transition: top .5s ease-in-out;
-        -webkit-transition: font-size .5s ease-in-out;
-        -moz-transition: font-size .5s ease-in-out;
-        transition: font-size .5s ease-in-out;
+  -webkit-transition: top .25s;
+        -moz-transition: top .25s;
+        transition: top .25s;
+        -webkit-transition: font-size .25s;
+        -moz-transition: font-size .25s;
+        transition: font-size .25s;
 } 
 /*.h2-front {
   margin-top:1rem;
@@ -736,9 +766,10 @@ a.annex
   font-size: 1.1rem;
   line-height: 1.2;
 }*/
+
 .page-nav {
   width: 100%;
-  min-height: 30px;
+  // min-height: 30px;
   position: fixed;
   text-align:right;
   top: 90px;
@@ -753,9 +784,9 @@ a.annex
   display:inline-block;
   z-index:999;
   
-    -webkit-transition: top .5s ease-in-out;
-        -moz-transition: top .5s ease-in-out;
-        transition: top .5s ease-in-out;
+    -webkit-transition: top .25s;
+        -moz-transition: top .25s;
+        transition: top .25s;
 }
 .page-nav-items {
   float:right;
@@ -768,9 +799,9 @@ a.annex
   display: inline-block;
   font-size: .9rem;
   letter-spacing: .4px;
-  -webkit-transition: top .5s ease-in-out, color .25s linear, background-color .25s linear;
--moz-transition: top .5s ease-in-out, color .25s linear, background-color .25s linear;
-transition: top .5s ease-in-out, color .25s linear, background-color .25s linear;
+  -webkit-transition: top .25s, color .25s linear, background-color .25s linear;
+-moz-transition: top .25s, color .25s linear, background-color .25s linear;
+transition: top .25s, color .25s linear, background-color .25s linear;
 }
 .page-nav a:hover {
   background-color:yellow;
@@ -778,11 +809,13 @@ transition: top .5s ease-in-out, color .25s linear, background-color .25s linear
     -o-transition: background-color .25s linear;
   transition: background-color .25s linear;
 }
+
+
 .page-nav-collapse {
   top:60px;
-  -webkit-transition: top .5s ease-in-out;
-        -moz-transition: top .5s ease-in-out;
-        transition: top .5s ease-in-out;
+  -webkit-transition: top .25s;
+        -moz-transition: top .25s;
+        transition: top .25s;
 }
 .summary-1 .container {
   padding-top: 100px;
@@ -799,9 +832,9 @@ transition: top .5s ease-in-out, color .25s linear, background-color .25s linear
 .title {
   top: 19px;
     font-size: 2rem;
-      -webkit-transition: top .5s ease-in-out, font-size .5s ease-in-out;
-  -moz-transition: top .5s ease-in-out, font-size .5s ease-in-out;
-  transition: top .5s ease-in-out, font-size .5s ease-in-out;
+      -webkit-transition: top .25s, font-size .25s;
+  -moz-transition: top .25s, font-size .25s;
+  transition: top .25s, font-size .25s;
 }
 .navbar-header [aria-expanded="true"] {
   background-color:black;
@@ -1166,15 +1199,15 @@ h5 {
   font-size: .9rem;
 }
 /* .title.title-collapse {
-  -webkit-transition: left .5s ease-in-out;
-  -moz-transition: left .5s ease-in-out;
-  transition: left .5s ease-in-out;
+  -webkit-transition: left .25s;
+  -moz-transition: left .25s;
+  transition: left .25s;
   left: calc(113px + 1rem);
 }
 .title {
-  -webkit-transition: left .5s ease-in-out;
-  -moz-transition: left .5s ease-in-out;
-  transition: left .5s ease-in-out;
+  -webkit-transition: left .25s;
+  -moz-transition: left .25s;
+  transition: left .25s;
   left: calc(113px + 1rem);
 } */
 /*.menu-1 {
@@ -1189,19 +1222,19 @@ h5 {
 }
 .page-nav {
   top:60px;
-  -webkit-transition: top .5s ease-in-out;
-        -moz-transition: top .5s ease-in-out;
-        transition: top .5s ease-in-out;
+  -webkit-transition: top .25s;
+        -moz-transition: top .25s;
+        transition: top .25s;
 }
 /* .title.title-collapse {
   top: 21px;
     font-size: 1.2rem;
-      -webkit-transition: top .5s ease-in-out;
-  -moz-transition: top .5s ease-in-out;
-  transition: top .5s ease-in-out;
-  -webkit-transition: font-size .5s ease-in-out;
-  -moz-transition: font-size .5s ease-in-out;
-  transition: font-size .5s ease-in-out;
+      -webkit-transition: top .25s;
+  -moz-transition: top .25s;
+  transition: top .25s;
+  -webkit-transition: font-size .25s;
+  -moz-transition: font-size .25s;
+  transition: font-size .25s;
 } */
 .page-nav {
   top: 60px;
