@@ -22,6 +22,9 @@
       <div class="menu-1">
         <h5>
           <ul class="nav navbar-nav">
+            <li {% if include.folder == 'iuventa' %} class="current" {% endif %}>
+              <a class="page-scroll" href="{{ site.baseurl }}/iuventa">Iuventa Case</a>
+            </li>             
             <li {% if include.folder == 'foreword' %} class="current" {% endif %}>
               <a class="page-scroll" href="{{ site.baseurl }}/foreword">Foreword</a>
             </li> 
