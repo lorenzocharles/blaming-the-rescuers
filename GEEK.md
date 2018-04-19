@@ -16,9 +16,11 @@ This site uses **Jekyll**, a static site generator. To learn how to build stuff 
 
 * Install the [Grunt CLI](http://gruntjs.com/getting-started)
 
-  `npm install -g grunt-cli` 
+  `sudo npm install -g grunt-cli` 
 
+<!--
 * Install the [LiveReload Chrome extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
+-->
 
 ### Method
 
