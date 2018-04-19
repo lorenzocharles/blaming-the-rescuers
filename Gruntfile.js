@@ -30,7 +30,7 @@ module.exports = function(grunt) {
       scripts: {
         files: [
           '_config.yml',
-          '*.html',  
+          '*.html',
           '_layouts/**',
           '_posts/**',
           '_includes/**',
@@ -68,24 +68,33 @@ module.exports = function(grunt) {
           },
           browser: 'google chrome',
           notify: false
-        } 
+        }
       }
     },
     jekyll: {
-      options: {                        
+      options: {
         raw: 'baseurl: ""'
       }
-    } 
+    },
+    'heroku-deploy' :
+    {
+        production : {
+            deployBranch : 'prod',
+            herokuRemote : 'heroku'
+        }
+    }
   })
 
   grunt.loadNpmTasks('grunt-contrib-sass')
   // grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-shell')
-  grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-jekyll');
-  
+  grunt.loadNpmTasks('grunt-browser-sync')
+  grunt.loadNpmTasks('grunt-jekyll')
+  grunt.loadNpmTasks('grunt-heroku-deploy')
+
   // grunt.registerTask('tasting', ['browserSync', 'watch'])
   grunt.registerTask('default', ['shell:jekyllBuild', 'browserSync', 'watch'])
+  grunt.registerTask('heroku', ['shell:jekyllBuild', 'heroku-deploy'])
   // grunt.registerTask('yolo', ['jekyll', 'watch'])
 }

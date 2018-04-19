@@ -14,5 +14,8 @@
     "type": "git",
     "url": "https://github.com/lorenzocharles/report"
   },
-  "license": "CC-BY-NC-4.0"
+  "license": "CC-BY-NC-4.0",
+  "dependencies": {
+    "grunt-heroku-deploy": "^0.1.1"
+  }
 }
