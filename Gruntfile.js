@@ -6,6 +6,9 @@ module.exports = function(grunt) {
       },
       jekyllServe: {
         command: "jekyll serve --baseurl ''"
+      },
+      heroku: {
+        command: "git push heroku aimee/dev-2018"
       }
     },
     /*connect: {
@@ -79,7 +82,7 @@ module.exports = function(grunt) {
     'heroku-deploy' :
     {
         production : {
-            deployBranch : 'prod',
+            deployBranch : 'aimee/dev-2018',
             herokuRemote : 'heroku'
         }
     }
