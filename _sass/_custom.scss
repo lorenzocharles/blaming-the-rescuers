@@ -619,6 +619,20 @@ ul.nav
       }
     }
 
+    a.yellow-nav
+    {
+      color: yellow;
+      background-color: black;  
+      transition: color, background-color .25s;
+
+      &:hover 
+      {
+        color: white;
+        transition: color, background-color .25s;
+      }
+    }
+
+
     &.active,
     &.current
     {
